@@ -1,4 +1,4 @@
-`use client`
+`use client`;
 
 import React from "react";
 import Image from "next/image";
@@ -19,13 +19,15 @@ function Youtube1() {
             testimonial, DP World Tour Pro Player
           </p>
         </div>
-        {/* <iframe src={yt}></iframe> */}
-        <Link
-          className="lg:pr-24 pl-12 w-[85%]"
-          href="https://www.youtube.com/"
-        >
-          <Image src={yt} alt="video"></Image>
-        </Link>
+        <iframe
+          className="lg:pl-24 pr-12 w-[55%] h-[562px] border-secondary border-1"
+          src="https://www.youtube.com/embed/QPOLrbKI5oQ"
+          title="User psychology in Technical Writing Ft. Yael Basford, Senior Technical Writer, Akamai"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   );
