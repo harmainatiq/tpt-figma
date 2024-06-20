@@ -1,0 +1,11 @@
+.slick-dots {
+  @apply flex justify-center mt-4;
+}
+
+.slick-dots li button:before {
+  @apply text-white text-xs;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-secondary;
+}

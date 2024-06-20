@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import ds from "./public/Images/lo-sarno-QLdp9SGDf5Y-unsplash 1.png"
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,10 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        'hero': "url('/Images/Group 63.png')",
+        'slider': "url('/Images/Group 65.png')",
+        'footer': "url('/Images/Group 69.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primary: "#000000",
+        secondary: "#FEF000",
+      }
     },
   },
   plugins: [],
