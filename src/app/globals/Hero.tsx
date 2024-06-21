@@ -14,9 +14,9 @@ function Hero({ title, heading, description1, description2 }: any) {
       <Image
         src={bg}
         alt="Description of image"
-        layout="fill"
+        fill
         objectFit="cover"
-        quality={100}
+        quality={60}
         className="absolute top-0 left-0 w-full h-full -z-10"
       />
 
