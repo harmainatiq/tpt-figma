@@ -5,7 +5,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import bg from './../../../public/Images/Group 63.png'
+import bg from './../../../public/compressed-images/Group 63.png'
 import arrow from "./../../../public/Images/Vector 1.svg";
 
 function Hero({ title, heading, description1, description2 }: any) {

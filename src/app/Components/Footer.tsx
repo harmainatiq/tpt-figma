@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import bg from "./../../../public/Images/Group 69.png";
+import bg from "./../../../public/compressed-images/Group 69.png";
 import logo from "./../../../public/Images/logo-TPT 1.svg";
 import mail from "./../../../public/Images/Group 51.svg";
 
