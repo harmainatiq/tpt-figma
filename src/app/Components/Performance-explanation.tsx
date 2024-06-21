@@ -34,7 +34,7 @@ function Youtube2() {
       <div className="lg:px-10 px-6 flex lg:flex-row flex-col-reverse lg:gap-48 gap-6 lg:mb-28 mb-14">
         
         
-      <div className="lg:ml-20 ml-12 w-[36%] h-[650px] border-secondary border-1 relative bg-[darkgray] flex justify-center items-center">
+      <div className="lg:ml-20 ml-12 w-[33%] h-[650px] border-secondary border-1 relative bg-[darkgray] flex justify-center items-center">
       {!imageClicked ? (
         <>
           <Image
