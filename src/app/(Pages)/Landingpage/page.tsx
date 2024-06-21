@@ -26,7 +26,7 @@ const Landingpage: NextPage = () => {
           "Unlike traditional premium shafts, TPT eliminates parasitic bending during your swing. This means consistent strikes on the clubface, unlocking both distance and precision. With TPT, softer shafts mean more yards and tighter shots."
         }
       />
-      <SlickSliderComponent slides={slides} />
+      {/* <SlickSliderComponent slides={slides} /> */}
       <Youtube1 />
       <Youtube2 />
       <WorkingCard />
