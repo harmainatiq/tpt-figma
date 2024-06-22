@@ -18,7 +18,7 @@ function Hero({ title, heading, description1, description2 }: any) {
         objectFit="cover"
         quality={60}
         loading="lazy"
-        className="absolute top-0 left-0 w-full h-full -z-10"
+        className="absolute top-0 left-0 lg:w-full w-[30%] lg:h-full h-[30%] -z-10"
       />
 
       <div className="relative w-full h-full flex flex-col justify-center items-center text-center pb-6 lg:pb-16 pt-36 lg:pt-64">
@@ -28,10 +28,10 @@ function Hero({ title, heading, description1, description2 }: any) {
         <h1 className="w-[94%] lg:text-[80px] text-5xl font-extrabold leading-normal text-white mb-4 ">
           {heading}
         </h1>
-        <p className="w-[70%] lg:text-xl text-base text-white mb-3 lg:pl-0 pl-[8%]">
+        <p className="w-[70%] lg:text-xl text-base text-white mb-3">
           {description1}
         </p>
-        <p className="w-[70%] lg:text-xl text-base text-white lg:mb-12 mb-6 lg:pl-0 pl-[8%]">
+        <p className="w-[70%] lg:text-xl text-base text-white lg:mb-12 mb-6">
           {description2}
         </p>
         <button className="bg-secondary lg:mb-16 mb-9 lg:w-72 w-48 lg:h-12 h-7 lg:text-2xl text-lg font-bold text-primary">

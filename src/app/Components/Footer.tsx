@@ -17,7 +17,7 @@ function Footer() {
         objectFit="cover"
         quality={60}
         loading="lazy"
-        className="absolute top-0 left-0 w-full h-full -z-10"
+        className="absolute top-0 left-0 lg:w-full w-[50%] lg:h-full h-[50%] -z-10"
       />
       <div className="relative">
         <h1 className="text-secondary lg:text-6xl text-2xl font-extrabold text-center mb-5">
