@@ -1,19 +1,23 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import bg from "./../../../public/compressed-images/Group 69.webp";
 import logo from "./../../../public/Images/logo-TPT 1.svg";
 import mail from "./../../../public/Images/Group 51.svg";
-
-const FooterBackgroundImage = React.lazy(() => import('../suspense-components.tsx/FooterBackgroundImage'));
 
 function Footer() {
   return (
     <div className="relative w-full h-full lg:pt-28 pt-20">
-      <Suspense fallback={<div>Loading background...</div>}>
-        <FooterBackgroundImage />
-      </Suspense>
+      <Image
+        src={bg}
+        alt="Description of image"
+        fill
+        objectFit="cover"
+        quality={60}
+        className="absolute top-0 left-0 w-full h-full -z-10"
+      />
       <div className="relative">
         <h1 className="text-secondary lg:text-6xl text-2xl font-extrabold text-center mb-5">
           SIGN UP
@@ -51,7 +55,7 @@ function Footer() {
             alt="logo"
           ></Image>
           <p className="text-center text-white lg:text-xl text-base lg:mb-9 mb-6">
-            Chemin du Closel, 3<br></br>CH-1020 Renens, Switzerland
+            Chemin du Closel, 3<br></br>CH-1020 Renens, Switzerland
           </p>
           <button className="flex justify-around bg-secondary border-secondary border-1 w-[8%] lg:h-6 h-4 mx-[46%] py-[2px] text-primary text-sm text-center lg:mb-9 mb-6">
             <Image className="py-[5px]" src={mail} alt="icon"></Image>

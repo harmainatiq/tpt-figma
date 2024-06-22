@@ -1,13 +1,9 @@
 "use client";
 
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import yt from "./../../../public/Images/image 2.svg";
-
-// Dynamically import the YoutubeVideoPlayer component
-const YoutubeVideoPlayer = React.lazy(() => import('./../suspense-components.tsx/YouTubeVideoPlayer'));
-
-const embedID = "QPOLrbKI5oQ";
 
 function Youtube1() {
   const [imageClicked, setImageClicked] = useState(false);
@@ -37,9 +33,9 @@ function Youtube1() {
             Testimonial
           </div>
           <p className="lg:text-5xl text-xl text-white font-semibold lg:leading-normal">
-            Discover the TPT difference through{" "}
-            <span className="text-secondary">Bernd Wiesberger</span> testimonial,
-            DP World Tour Pro Player
+            Discover the TPT difference through .
+            <span className="text-secondary">Bernd Wiesberger</span>{" "}
+            testimonial, DP World Tour Pro Player
           </p>
         </div>
 
@@ -61,9 +57,15 @@ function Youtube1() {
               />
             </>
           ) : (
-            <Suspense fallback={<div>Loading video...</div>}>
-              <YoutubeVideoPlayer embedID={embedID} />
-            </Suspense>
+            <iframe
+              className="w-full h-full border-secondary border-1"
+              src="https://www.youtube.com/embed/QPOLrbKI5oQ"
+              title="User psychology in Technical Writing Ft. Yael Basford, Senior Technical Writer, Akamai"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           )}
         </div>
       </div>
