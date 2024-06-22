@@ -6,7 +6,7 @@ import Image from "next/image";
 import logo from "./../../../public/Images/logo-TPT 1.svg";
 import mail from "./../../../public/Images/Group 51.svg";
 
-const FooterBackgroundImage = React.lazy(() => import('./FooterBackgroundImage'));
+const FooterBackgroundImage = React.lazy(() => import('../suspense-components.tsx/FooterBackgroundImage'));
 
 function Footer() {
   return (

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import arrow from "./../../../public/Images/Vector 1.svg";
 
-const BackgroundImage = React.lazy(() => import('./Backgroundimage'));
+const BackgroundImage = React.lazy(() => import('../suspense-components.tsx/Backgroundimage'));
 
 const HeroContent = ({ title, heading, description1, description2 }: any) => (
   <div className="relative w-full h-full flex flex-col justify-center items-center text-center pb-6 lg:pb-16 pt-36 lg:pt-64">
