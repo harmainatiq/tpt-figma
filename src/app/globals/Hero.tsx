@@ -17,6 +17,7 @@ function Hero({ title, heading, description1, description2 }: any) {
         fill
         objectFit="cover"
         quality={60}
+        loading="lazy"
         className="absolute top-0 left-0 w-full h-full -z-10"
       />
 
