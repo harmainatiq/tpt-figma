@@ -39,7 +39,7 @@ function Youtube1() {
           </p>
         </div>
 
-        <div className="lg:mr-24 mr-12 w-[65%] h-[562px] border-secondary border-1 relative bg-[darkgray] flex justify-center items-center">
+        <div className="lg:mr-24 lg:ml-0 ml-14 w-[65%] h-[562px] border-secondary border-1 relative bg-[darkgray] flex justify-center items-center">
           {!imageClicked ? (
             <>
               <Image
